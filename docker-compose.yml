@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    ahl-example:
+        image: ahl-example
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/ahl-example

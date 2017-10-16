@@ -1,0 +1,6 @@
+You must have Docker and Docker Compose installed to run this application
+
+* To run the application do `make start`
+* To run all unit tests do `make tests`
+* To tear down the application do `make clean`
+* To run the linter do `make lint`
