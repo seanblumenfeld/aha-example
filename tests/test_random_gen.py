@@ -28,7 +28,10 @@ class RandomGenTests(unittest.TestCase):
         When we call next_num() 
         Then we get the number with probability 1
         """
-        gen = RandomGen([1, 2], [1, 0])
+        gen = RandomGen(
+            random_nums=[1, 2],
+            probabilities=[1, 0]
+        )
         num = gen.next_num()
         self.assertEquals(num, 1)
 
@@ -40,7 +43,10 @@ class RandomGenTests(unittest.TestCase):
         When we call next_num()
         Then we get the number with probability 1
         """
-        gen = RandomGen([1, 2, 3], [0, 0, 1])
+        gen = RandomGen(
+            random_nums=[1, 2, 3],
+            probabilities=[0, 0, 1]
+        )
         num = gen.next_num()
         self.assertEquals(num, 3)
 

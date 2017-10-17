@@ -1,6 +1,10 @@
 You must have Docker and Docker Compose installed to run this application
 
-* To run the application do `make start`
-* To run all unit tests do `make tests`
+We use `make` for this application to speed up develop ease. Below is a list of useful commands.
+
+* run tests by calling `make tests`
+* run the PEP8 linter by calling `make lint`
+* To build the image do `make build`
 * To tear down the application do `make clean`
-* To run the linter do `make lint`
+* To open a developement terminal do `make dev`
+* For further information do `make help`
